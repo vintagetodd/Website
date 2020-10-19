@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<div id="background-wrap">
+    <div class="bubble x1">}</div>
+    <div class="bubble x2"></div>
+    <div class="bubble x3"></div>
+    <div class="bubble x4"></div>
+    <div class="bubble x5"></div>
+    <div class="bubble x6"></div>
+    <div class="bubble x7"></div>
+    <div class="bubble x8"></div>
+    <div class="bubble x9"></div>
+    <div class="bubble x10"></div>
+</div>
+
+<div style="text-align:center;">
+<svg id="o2go" class="logo" width="640" height="640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+ <defs>
+  <linearGradient id="linearGradient986">
+   <stop stop-color="#5e5e97" offset="0"></stop>
+   <stop stop-color="#5e5e97" stop-opacity="0" offset="1"></stop>
+  </linearGradient>
+  <linearGradient id="linearGradient988" x1="204.07" x2="387.8" y1="344.44" y2="503.88" gradientTransform="translate(-50.917 -91.55)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient986"></linearGradient>
+  <linearGradient id="linearGradient988-1" x1="204.07" x2="387.8" y1="344.44" y2="503.88" gradientTransform="translate(-700.92 -734.96)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient986"></linearGradient>
+ </defs>
+ <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke-width="10">
+   <path fill-rule="evenodd" stroke="url(#linearGradient988)" stroke-opacity=".9" style="mix-blend-mode:normal" d="M137.093,322.08A94.007,94.007 0,1,1 325.10699999999997,322.08A94.007,94.007 0,1,1 137.093,322.08" class="O1"></path>
+   <path transform="scale(-1)" fill-rule="evenodd" stroke="url(#linearGradient988-1)" stroke-opacity=".9" style="mix-blend-mode:normal" d="M-512.9069999999999,-321.33A94.007,94.007 0,1,1 -324.893,-321.33A94.007,94.007 0,1,1 -512.9069999999999,-321.33" class="O2"></path>
+   <path id="G" d="m384.8 196.67c-16.926-9.5046-38.101-6.6452-51.901 7.0083s-16.883 34.797-7.5584 51.823c9.3245 17.026 28.801 25.815 47.737 21.54s32.749-20.576 33.856-39.957l-28.473-0.26641" stroke="#498628" stroke-opacity=".74902" class="LG"></path>
+  </g>
+  <path d="m269.37 382.4c0.77677-3.1717 1.1093-10.307 9.9487-15.239 29.739-16.591 53.631 21.652 24.382 39.549-26.204 16.033-38.439 14.566-40.262 44.631l54.005 0.0189" stroke="#498628" stroke-opacity=".74902" stroke-width="9.583" class="L2"></path>
+ </g>
+<style>.O1{stroke-dasharray:591 593;stroke-dashoffset:592;animation:logo_draw 4000ms ease-in-out 0ms forwards;}.O2{stroke-dasharray:592 594;stroke-dashoffset:593;animation:logo_draw 4000ms ease-in-out 6500ms forwards;}.LG{stroke-dasharray:254 256;stroke-dashoffset:255;animation:logo_draw 4000ms ease-in-out 5000ms forwards;}.L2{stroke-dasharray:215 217;stroke-dashoffset:216;animation:logo_draw 4000ms ease-in-out 2500ms forwards;}@keyframes logo_draw{100%{stroke-dashoffset:0;}}@keyframes logo_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+
+body {
+	background: #00b4ff;
+	color: #333;
+	font: 100% Lato, Arial, Sans Serif;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.x1 {
+    animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate, fadeinout 23s linear forwards 1;
+	
+	left: -5%;
+	top: 5%;
+	
+	transform: scale(0.6);    
+}
+
+.x2 {
+    animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate, fadeinout 18s linear forwards 1;
+	
+	left: 5%;
+	top: 80%;
+	
+	transform: scale(0.4);
+}
+
+.x3 {
+    animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate, fadeinout 26s linear forwards 1;
+	
+	left: 10%;
+	top: 40%;
+	
+	transform: scale(0.7);
+}
+
+.x4 {
+    animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate, fadeinout 20s linear forwards 1;
+	
+	left: 20%;
+	top: 0;
+	
+	transform: scale(0.3);
+}
+
+.x5 {
+    animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate, fadeinout 27s linear forwards 1;
+	
+	left: 30%;
+	top: 50%;
+	
+	transform: scale(0.5);
+}
+
+.x6 {
+    animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate, fadeinout 19s linear forwards 1;
+	
+	left: 50%;
+	top: 0;
+	
+	transform: scale(0.8);
+}
+
+.x7 {
+    animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate, fadeinout 18s linear forwards 1;
+	
+	left: 65%;
+	top: 70%;
+	
+	transform: scale(0.4);
+}
+
+.x8 {
+    animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate, fadeinout 20s linear forwards 1;
+	
+	left: 80%;
+	top: 10%;
+	
+	transform: scale(0.3);
+}
+
+.x9 {
+    animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate, fadeinout 27s linear forwards 1;
+	
+	left: 90%;
+	top: 50%;
+	
+	transform: scale(0.6);
+}
+
+.x10 {
+    animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate, fadeinout 24s linear forwards 1;
+
+	left: 80%;
+	top: 80%;
+	
+	transform: scale(0.3);
+}
+
+.bubble {
+    border-radius: 50%;
+	
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(238, 242, 249, 1);
+    height: 200px;
+	position: absolute;
+	width: 200px;    
+}
+
+.bubble:after {
+    background: gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(238, 242, 249, 0.5)), color-stop(70%,rgba(238, 242, 249, 0)));
+    background: radial-gradient(center, ellipse cover,  rgba(238, 242, 249, 0.5) 0%,rgba(238, 242, 249, 0) 70%);
+
+	border-radius: 50%;
+	
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+
+<style>
+a:link {
+  color: #dbe4f2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #dbe4f2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dbf2dd;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1f2f30;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+
+<div class="slide1">
+<h1><a href="html_purchase.asp">Oxygen To-Go</a></h1>
+</div>
+
+<style>
+.slide1 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.slide1 h1 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ animation: slidein 10s ease-in-out;
+}
+
+@keyframes slidein {
+ 0%   { 
+ transform: translateX(200%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+</style></svg>
+
+<style>
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.border1 {
+border-style:double;
+border-size:thick;
+padding-top: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+}
+h1 {text-align:center;}
+body {
+ background-color: #1f2f30;
+</style>
+</head>
+
+<body>
+
+
+</body>
+</html>
